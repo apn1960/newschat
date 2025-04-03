@@ -1,25 +1,38 @@
+# NewsChat
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and designed to be fun and easy to get your hands dirty with the AI SDK.
+An AI-powered knowledge base for news articles with advanced search and chat capabilities.
+
+## Features
+
+- Add news articles via URL
+- Extract article metadata (publisher, author, categories)
+- Semantic search across articles
+- Chat interface with context-aware responses
+- Vector-based similarity matching
+- Modern, responsive UI
+
+## Tech Stack
+
+- Next.js 14
+- OpenAI API
+- Supabase (PostgreSQL with pgvector)
+- TypeScript
+- Tailwind CSS
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Copy `.env.example` to `.env` and add your API keys
+3. Install dependencies: `npm install`
+4. Run the development server: `npm run dev`
+5. Open [http://localhost:3000](http://localhost:3000)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Environment Variables
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Required environment variables in `.env`:
+- `OPENAI_API_KEY`
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `SUPABASE_SERVICE_KEY`
 
 ## Learn More
 
